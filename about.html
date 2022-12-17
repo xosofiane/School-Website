@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--============= Navigation ==============-->
+    <nav>
+        <img src="images/LOGO COULEUR.png" id="logo" alt="Golden Academy Logo">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class='bx bx-x'></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!--============= about-home ==============-->
+    <section id="about-home">
+        <h2>| About us |</h2>
+        
+    </section>
+    <!--============= about-container ==============-->
+    <section id="about">
+        <div class="content">
+            <img src="images/aboutimg.jpg" alt="">
+            <div class="text">
+                <h1><span>A</A></span>bout Us</h1>
+                <h5>Golden Academy</h5>
+                <p>We are a private school Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Nam amet a pariatur odio quia voluptatibus quas ut nisi veniam iure!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Ab voluptatem eos quibusdam explicabo numquam culpa labore unde alias, veritatis ipsum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                <a class="btn03" href="courses.html">View Courses</a>
+            </div>
+        </div>
+
+       
+
+            
+    </section>
+    <!--============= about-features ==============-->
+    <section id="about-features">
+        <h1>Features</h1>
+        <p >Lorem ipsum dolor sit amet.</p>
+
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class='bx bxs-certification'></i>
+                <h3>Global Certification</h3>
+                <p>Lorem ipsum, dolor sit amet <br> adipisicing elit. Libero, beatae!</p>
+            </div>
+
+            <div class="fea-box">
+                <i class='bx bxs-certification'></i>
+                <h3>Global Certification</h3>
+                <p>Lorem ipsum, dolor sit amet <br> adipisicing elit. Libero, beatae!</p>
+            </div>
+
+            <div class="fea-box">
+                <i class='bx bxs-certification'></i>
+                <h3>Global Certification</h3>
+                <p>Lorem ipsum, dolor sit amet <br> adipisicing elit. Libero, beatae!</p>
+            </div>
+        </div>
+
+    </section>
+
+
+<!--====== Footer =======-->
+    <footer>
+        <div class="footer-row">
+            <div class="f-title">
+                <h3>All rights reserved @Soufiane<span>Messai</span></h3>
+            </div>
+            <div class="f-icons">
+                <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+        })
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        })
+    </script>
+
+</body>
+</html>

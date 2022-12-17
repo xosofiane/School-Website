@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--============= Navigation ==============-->
+    <nav>
+        <img src="images/LOGO COULEUR.png" id="logo" alt="Golden Academy Logo">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class='bx bx-x'></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!--============= Home ==============-->
+    <section id="courses-home">
+        <h2>| Great choice, Enroll now |</h2>
+    </section>
+
+    <!--============= Courses-inner ==============-->
+    <section id="course-inner">
+        <div class="overview">
+            <img class="course-img" src="images/pharmacie.jpg" alt="">
+            <div class="course-head">
+                <div class="c-name">
+                    <h3>Pharmacist Salesman</h3>
+                    <div class="star">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit,Esse nam laudantium harum blanditiis sapiente temporibus?</p>
+                </div>
+                <span>$120</span>
+            </div>
+            <h4>Instructor</h4>
+            <div class="tutor">
+                <img src="images/pp.jpg" alt="">
+                <div class="tutor-det">
+                    <h5>Tarek Medjdoub</h5>
+                    <p>English teacher</p>
+                </div>
+            </div>
+            <hr>
+            <h4>Course overview</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe consequuntur et officiis voluptatibus esse a voluptas dolor inventore. Nemo asperiores porro illum eveniet doloremque quos quam tempore odit quisquam nostrum vel, ea natus ex sit eligendi nihil at nesciunt recusandae, laborum optio? Totam explicabo autem maiores quisquam, deleniti dignissimos officiis aliquam libero nisi nam laudantium, qui distinctio modi excepturi natus magnam dolorem aperiam quasi? Dolores esse laborum quos alias, dignissimos amet odio possimus qui molestiae pariatur in ratione asperiores ipsum, facere aspernatur. Tenetur, voluptatem. Exercitationem totam repellendus aut libero veritatis, eum aperiam ratione unde dolor dignissimos dolores impedit accusantium illum deserunt sit voluptatum placeat nisi architecto? Voluptatem molestiae voluptas ut quod odio alias non ratione minus, accusantium adipisci quas omnis!</p>
+            <hr>
+            <h4>What you'll learn</h4>
+            <div class="learn">
+                <p><i class='bx bxs-check-circle'></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolorem?</p>
+                <p><i class='bx bxs-check-circle'></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolorem?</p>
+                <p><i class='bx bxs-check-circle'></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolorem?</p>
+                <p><i class='bx bxs-check-circle'></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolorem?</p>
+                <p><i class='bx bxs-check-circle'></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolorem?</p>
+                <p><i class='bx bxs-check-circle'></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolorem?</p>
+            </div>
+        </div>
+        <div class="enroll">
+            <h4>This course includes:</h4>
+            <p><i class='bx bx-video'></i>Lorem ipsum dolor sit amet.</p>
+            <p><i class='bx bx-file'></i>Lorem ipsum dolor sit amet.</p>
+            <p><i class='bx bx-download'></i>Lorem ipsum dolor sit amet.</p>
+            <p><i class='bx bx-infinite' ></i>Lorem ipsum dolor sit amet.</p>
+            <p><i class='bx bx-book-open'></i>Lorem ipsum dolor sit amet.</p>
+            <p><i class='bx bx-certification'></i>Lorem ipsum dolor sit amet.</p>
+            <div class="enroll-btn">
+                <a class="blue" href="#">Enroll Course</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--====== Footer =======-->
+    <footer>
+        <div class="footer-row">
+            <div class="f-title">
+                <h3>All rights reserved @Soufiane<span>Messai</span></h3>
+            </div>
+            <div class="f-icons">
+                <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+        })
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        })
+    </script>
+
+</body>
+</html>

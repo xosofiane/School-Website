@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--============= Navigation ==============-->
+    <nav>
+        <a href="#"><img src="images/LOGO COULEUR.png" id="logo" alt="Golden Academy Logo"></a>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class='bx bx-x'></i>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!--============= Home ==============-->
+    <section id="home">
+        <h2> <span class="yellow">G</span>OLDEN <span class="yellow">A</span>CADEMY</h2>
+        <p>Don't Put a limit on anything <br> The more you <span>dream</span> the farther you get</p>
+
+        <div class="btn">
+            <a class="btn1" href="about.html">Learn more</a>
+            <a class="btn2" href="#course">View courses</a>
+        </div>
+    </section>
+    <!--============= Features ==============-->
+    <section id="features">
+        <h1>Features</h1>
+        <p >Lorem ipsum dolor sit amet.</p>
+
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class='bx bxs-certification'></i>
+                <h3>Global Certification</h3>
+                <p>Lorem ipsum, dolor sit amet <br> adipisicing elit. Libero, beatae!</p>
+            </div>
+
+            <div class="fea-box">
+                <i class='bx bxs-certification'></i>
+                <h3>Global Certification</h3>
+                <p>Lorem ipsum, dolor sit amet <br> adipisicing elit. Libero, beatae!</p>
+            </div>
+
+            <div class="fea-box">
+                <i class='bx bxs-certification'></i>
+                <h3>Global Certification</h3>
+                <p>Lorem ipsum, dolor sit amet <br> adipisicing elit. Libero, beatae!</p>
+            </div>
+        </div>
+
+    </section>
+    <!--============= Courses ==============-->
+    <section id="course">
+        <h1>Popular Courses</h1>
+        <p >Lorem ipsum dolor sit amet.</p>
+        <div class="course-box">
+
+            <div class="courses">
+                <img src="images/pharmacie.jpg">
+                <div class="details">
+                    <h4>Pharmacist Salesman</h4>
+                    <div class="star">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span>(130)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $120
+                </div>
+            </div>
+
+            <div class="courses">
+                <img src="images/masa3d tabib.jpg">
+                <div class="details">
+                    <h4>Doctor Assistant</h4>
+                    
+                    <div class="star">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span>(130)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $120
+                </div>
+            </div>
+
+            <div class="courses">
+                <img src="images/dentist.jpg">
+                <div class="details">
+                    <h4>Dentist Assistant</h4>
+                    
+                    <div class="star">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span>(130)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $120
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="more">
+            <a href="courses.html">All Courses<i class='bx bx-right-arrow-alt' ></i></a>
+            
+        </div>
+    </section>
+
+<!--====== Footer =======-->
+    <footer>
+        <div class="footer-row">
+            <div class="f-title">
+                <h3>All rights reserved @Soufiane<span>Messai</span></h3>
+            </div>
+            <div class="f-icons">
+                <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+        })
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        })
+    </script>
+
+</body>
+</html>
