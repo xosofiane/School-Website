@@ -10,7 +10,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    
+    background-color: antiquewhite;
 }
 
 h1{
@@ -79,12 +79,33 @@ nav .navigation ul li a:hover{
     background-image: linear-gradient(rgba(9,5,14,0.3), rgba(5,4,46,0.7)), url("images/2.jpg");
     width: 100%;
     height: 100vh;
+    position: relative;
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.custom-shape-divider-bottom-1671411425 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1671411425 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 118px;
+}
+
+.custom-shape-divider-bottom-1671411425 .shape-fill {
+    fill:antiquewhite;
 }
 h2{
     font-size: 4.5rem;
@@ -149,6 +170,7 @@ span{
 #features{
     padding: 5vw 8vw 0 8vw;
     text-align: center;
+    
 }
 #features .fea-base{
     display: grid;
@@ -209,6 +231,7 @@ span{
     grid-gap: 2rem;
     margin-top: 50px;
     margin-bottom: 20px;
+    
 }
 #course .courses{
     background-color: rgb(255, 255, 255);
@@ -222,6 +245,7 @@ span{
 #course .courses:hover{
     background-color: aquamarine;
     transform: scale(1.1);
+    cursor: pointer;
 }
 #course .courses img{
     width: 100%;
@@ -301,17 +325,17 @@ footer{
 
 .footer-row .f-title h3{
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 .footer-row .f-title span{
     color: rgb(255, 0, 0);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 .footer-row .f-icons i{
     color: white;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     vertical-align: middle;
 }
 
@@ -344,6 +368,7 @@ footer{
     justify-content: center;
     align-items: center;
 }
+
 #about-home h2{
     font-size: 3.2rem;
     font-weight: 500;
@@ -447,6 +472,7 @@ footer{
 #courses-page{
     padding: 8vw 8vw 8vw 8vw;
     text-align: center;
+    background-color: antiquewhite;
 }
 #courses-page .course-box{
     display: grid;
@@ -535,7 +561,7 @@ footer{
 }
 
 
-/*================== Course-inner =======================*/
+/*================== Course-inner01 =======================*/
 
 #course-inner{
     display: flex;
@@ -561,7 +587,6 @@ footer{
     width: 100%;
     height: 60vh;
     object-fit: cover;
-    border: 4px solid red;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
     border-radius: 12px;
     margin-bottom: 20px;
@@ -625,6 +650,7 @@ footer{
     padding: 0 30px 30px 30px;
     border-radius: 11px;
     box-shadow: 0 20px 40px 0 rgb(11 2 55 / 20%);
+    background-color: white;
 }
 #course-inner .enroll h4{
     padding-bottom: 10px;
@@ -661,7 +687,6 @@ footer{
 #course-inner .enroll .enroll-btn a:hover{
     background-color: green;
 }
-
 
 
 /*================== Contact =======================*/
@@ -1080,10 +1105,12 @@ footer{
     #contact .getin {
         width: 250px;
     }
+    /*=========== Divider ============*/
+    .custom-shape-divider-bottom-1671411425 svg {
+        height: 50px;
+    }
+
 }
-
-
-
 
 
 
@@ -1175,7 +1202,11 @@ footer{
     #contact .form .form-row input{
         width: 100%;
     };
-    
+    /*=========== Divider ============*/
+
+    .custom-shape-divider-bottom-1671411425 svg {
+        height: 50px;
+    }
 }
 
 
